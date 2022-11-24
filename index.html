@@ -1,445 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.sass">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
 </head>
+
 <body>
     <header class="header">
-        <a href="#" class="header__logo">
-            <img src="image/icon__svg/logo.svg" alt="#" class="header__image-logo">
-        </a>
+        <div class="container">
+            <div class="header__wrap">
 
-        <div class="header__menu">
-            <div class="header__nav">
-                <div class="header__item">
-                    <a href="#" class="header__link">Shop</a>
-                </div>
-                <div class="header__item">
-                    <a href="#" class="header__link">About us</a>
-                </div>
-                <div class="header__item">
-                    <a href="#" class="header__link">Our team</a>
-                </div>
-                <div class="header__item">
-                    <a href="#" class="header__link">Buyer's guides</a>
-                </div>
-                <div class="header__item">
-                    <a href="#" class="header__link">Categories</a>
-                </div>
-            </div>
+                <a class="logo" href="index.html">
+                    <picture class="logo__img">
+                        <source srcset="image/mobile__logo.svg" media="(max-width:640px)">
+                        <img src="image/logo.svg" alt="#">
+                    </picture>
+                </a>
+                <!-- /.logo -->
 
-            <div class="header__buttons">
-                <button class="header__button button">Buy template</button>
-                <button class="header__button-cart button">
-                    <img src="image/icon__svg/cart-icon.svg" alt="#" class="header__image-cart">
-                    <span class="header__text-cart">Cart</span>
-                    <span class="header__couter-cart">0</span>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link link-line" href="#products">О дроне</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link link-line" href="#benefits">Преимущества</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link link-line" href="#specification">Характиристики</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link link-line" href="#question">Вопросы</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link link-line" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                    <!-- /.menu__list -->
+                </nav>
+                <!-- /.menu -->
+
+                <div class="header__info">
+                    <button class="header__btn">Купить</button>
+                    <!-- /.header__btn -->
+                    <a class="header__phone link-line " href="tel:+70505676767">8 (050) 567 67 67</a>
+                </div>
+                <!-- /.header__info -->
+
+                <button class="header__humburger">
+                    <img src="image/header__btn.svg" alt="#">
                 </button>
+                <!-- /.header__btn -->
+
             </div>
+            <!-- /.header__wrap -->
         </div>
+        <!-- /.container -->
     </header>
     <!-- /.header -->
 
-    <div class="main">
-        <section class="main__poster">
-            <div class="container">
-                <div class="poster__wrap">
-                    <div class="poster__title">
-                        <div class="poster__text-yellow">OUTDOOR EXPLORATION</div>
-                        <h2 class="poster__text-bold">Gear for when it <br> actually matters.</h2>
-                        <div class="poster__text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse varius enim in eros elementum tristique.</div>
-                    </div>
-                </div>
-                <!-- /.poster__wrap -->
+    <section class="page-section top">
+        <div class="container">
+            <div class="top__wrap">
+                <h1 class="top__title">
+                    Mavic 2 Pro
+                </h1>
+                <!-- ./top__title -->
+
+                <picture class="top__img">
+                    <source srcset="image/top__modile-img.png" media="(max-width:440px)">
+                    <source srcset="image/top__medium-img.png" media="(max-width:730px)">
+                    <img src="image/content/dron.png" alt="#">
+                </picture>
+
+                <p class="top__text">
+                    Квадрокоптер Dji Mavic 2 Pro
+                    с профессиональной камерой Hasselblad
+                </p>
+                <!-- /.top__text -->
+
+                <ul class="top__social-list">
+                    <li class="top__social-item">
+                        <a class="top__social-link" href="#"><img src="image/facebook.svg" alt="#"></a>
+                    </li>
+                    <li class="top__social-item">
+                        <a class="top__social-link" href="#"><img src="image/youtube.svg" alt="#"></a>
+                    </li>
+                    <li class="top__social-item">
+                        <a class="top__social-link" href="#"><img src="image/instagram.svg" alt="#"></a>
+                    </li>
+                </ul>
+                <!-- /.top__social-list -->
             </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.main__poster -->
+            <!-- /.top__wrap -->
+        </div>
+        <!-- /.container -->
 
-        <section class="main__about">
-            <div class="container">
-                <div class="about__wrap">
-                    <img src="image/about-image.png" alt="#" class="about__image">
-                    <div class="about__title">
-                        <div class="about__text-yellow">Who are we?</div>
-                        <div class="about__text-bold">A bit about us.</div>
-                        <div class="about__text-description">
-                            We are an outdoor gear company focused on <br> 
-                            Lorem ipsum dolor sit amet, consectetur <br> 
-                            adipiscing elit. Nullam scelerisque aliquam odio <br> 
-                            et faucibus. Nulla rhoncus feugiat eros quis <br> 
-                            consectetur. Morbi neque ex, condimentum <br> 
-                            dapibus congue et.
-                        </div>
-                        <a href="#" class="about__link-more">
-                            <div class="about__text-more">Read more</div>
-                            <img src="image/icon__svg/arrow-icon.svg" alt="#" class="about__image-more">
-                        </a>
-                    </div>
+        <div class="scroll__btn">
+            <a class="scroll__link" href="#products"><img src="image/arrow__page-down.svg" alt="#"></a>
+        </div>
+        <!-- /.scroll__btn -->
+    </section>
+    <!-- /.page-section  top-->
+
+    <section id="products" class="page-section products">
+        <div class="container">
+
+            <h3 class="title">Что такое Mavic 2 Pro?</h3>
+            <!-- /.products__title -->
+
+            <div class="products__wrap">
+                <div class="products__text">
+                    <p class="products__text">
+                        Дрон Mavic 2 Pro - это инженерное чудо, идеальное для аэросъемки. Дрон обладает всеми
+                        лучшими
+                        технологиями DJI, он
+                        преобразит мир аэросъемки.
+                    </p>
+                    <p>
+                        Mavic 2 Pro оснащен совершенно новой камерой Hasselblad L1D-20c. Камера L1D-20c работает по
+                        уникальной технологии
+                        Hasselblad Natural Colour Solution (HNCS)5, позволяющей пользователям делать великолепные
+                        снимки
+                        с
+                        воздуха с разрешением
+                        в 20 мегапикселей и потрясающими цветами.
+                    </p>
                 </div>
-                <!-- /.about__wrap -->
+                <!-- /.products__text -->
+
+                <div class="products__slider-box">
+                    <p class="products__slider-text">
+                        Лучшая беспилотная
+                        технология аэросъемки
+                    </p>
+
+                    <div class="products__slider">
+                        <div class="products__slider-item">
+                            <img class="products__slider-img" src="image/content/slider-1.png" alt="#">
+                        </div>
+                        <!-- /.products__slider-item -->
+                        <div class="products__slider-item">
+                            <img class="products__slider-img" src="image/content/slider-2.png" alt="#">
+                        </div>
+                        <!-- /.products__slider-item -->
+                        <div class="products__slider-item">
+                            <img class="products__slider-img" src="image/content/slider-3.png" alt="#">
+                        </div>
+                        <!-- /.products__slider-item -->
+                        <div class="products__slider-item">
+                            <img class="products__slider-img" src="image/content/slider-4.png" alt="#">
+                        </div>
+                        <!-- /.products__slider-item -->
+                        <div class="products__slider-item">
+                            <img class="products__slider-img" src="image/content/slider-5.png" alt="#">
+                        </div>
+                        <!-- /.products__slider-item -->
+                        <div class="products__slider-item">
+                            <img class="products__slider-img" src="image/content/slider-6.png" alt="#">
+                        </div>
+                        <!-- /.products__slider-item -->
+                    </div>
+                    <!-- /.products__slider -->
+                    <div class="button-nav"></div>
+                    <!-- /.button-nav -->
+                </div>
+                <!-- /.products__slider-box -->
             </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.main__about -->
+            <!-- /.products__wrap -->
+        </div>
+        <!-- /.container -->
 
-        <section class="main__setting">
-            <div class="container">
-                <div class="setting__title">
-                    <div class="setting__text-yellow text-yellow ">Our promise</div>
-                    <div class="setting__text-bold text-bold">Setting the bar for our products.</div>
-                    <div class="setting__text-description text-description">
-                        Morbi neque ex, condimentum dapibus congue et, vulputate ut <br> 
-                        ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi <br> 
-                         ultrices, ut faucibus orci tincidunt.
+        <div class="scroll__btn">
+            <a class="scroll__link" href="#benefits"><img src="image/arrow__page-down.svg" alt="#"></a>
+        </div>
+        <!-- /.scroll__btn -->
+    </section>
+    <!-- /.page-section products-->
+
+    <section id="benefits" class="page-section benefits">
+        <div class="container">
+            <div class="benefits__wrap">
+                <h3 class="title">Преимущества</h3>
+                <!-- /.benefits__title -->
+
+                <div class="benefits__items">
+                    <div class="benefits__item benefits__item-1">
+                        <div class="benefits__num">1</div>
+                        <div class="benefits__img">
+                            <img class="benefits__img" src="image/benefits-1.jpg" alt="">
+                        </div>
+
+                        <div class="benefits__info">
+                            <h4 class="benefits__info-title">
+                                Интеллектуальные
+                                режимы
+                            </h4>
+
+                            <p class="benefits__text">
+                                Mavic 2 унаследовал 6 стандартных режимов интеллектуальной съемки
+                                QuickShot:Roket /Dronie /Circle /Helix /Boomerang /Asteroid.
+                            </p>
+                        </div>
+                        <!-- /.benefits__info -->
                     </div>
+                    <!-- /.benefits__item -->
+
+                    <div class="benefits__item benefits__item-2">
+                        <div class="benefits__num">2</div>
+                        <div class="benefits__img">
+                            <img class="benefits__img" src="image/benefits-2.jpg" alt="">
+                        </div>
+
+                        <div class="benefits__info">
+                            <h4 class="benefits__info-title">
+                                Active Track 2.0
+                            </h4>
+
+                            <p class="benefits__text">
+                                Усовершенствованный режим второго поколения распознаёт и отслеживает объекты ещё точнее,
+                                быстрее и умнее.
+                            </p>
+                        </div>
+                        <!-- /.benefits__info -->
+                    </div>
+                    <!-- /.benefits__item -->
+
+                    <div class="benefits__item benefits__item-3">
+                        <div class="benefits__num">3</div>
+                        <div class="benefits__img">
+                            <img class="benefits__img" src="image/benefits-3.jpg" alt="">
+                        </div>
+
+                        <div class="benefits__info">
+                            <h4 class="benefits__info-title">
+                                Панорамная
+                                съемка
+                            </h4>
+
+                            <p class="benefits__text">
+                                Mavic 2 поддерживает 4 режима
+                                панорамной съёмки: сферическая,
+                                180 градусов,
+                                горизонтальная, вертикальная
+                            </p>
+                        </div>
+                        <!-- /.benefits__info -->
+                    </div>
+                    <!-- /.benefits__item -->
+
+                    <div class="benefits__item">
+                        <div class="benefits__num">4</div>
+                        <div class="benefits__img">
+                            <img class="benefits__img" src="image/benefits-4.jpg" alt="">
+                        </div>
+
+                        <div class="benefits__info">
+                            <h4 class="benefits__info-title">
+                                Крутая
+                                камера!
+                            </h4>
+
+                            <p class="benefits__text">
+                                Технология Hyperlapse в четырёх режимах исполнения.
+                                Улучшенный фото режим HDR
+                                Функция HyperLight для съёмки в условиях слабого освещения
+                                4К съёмка
+
+                            </p>
+                        </div>
+                        <!-- /.benefits__info -->
+                    </div>
+                    <!-- /.benefits__item -->
                 </div>
-                <div class="setting__block">
-                    <div class="setting__item">
-                        <div class="setting__wrap-image"><img src="image/icon__svg/Combined-Shape-1.svg" alt="#" class="setting__image"></div>
-                        <div class="setting__name">Sustainable sourcing</div>
-                        <div class="setting__description">
-                            Lorem ipsum dolor sit amet, consectetur <br> 
-                            adipiscing elit. Suspendisse varius enim <br> in eros elementum tristique.
-                        </div>
-                    </div>
-                    <div class="setting__item">
-                        <div class="setting__wrap-image"><img src="image/icon__svg/Combined-Shape-1.svg" alt="#" class="setting__image"></div>
-                        <div class="setting__name">Sustainable sourcing</div>
-                        <div class="setting__description">
-                            Lorem ipsum dolor sit amet, consectetur <br> 
-                            adipiscing elit. Suspendisse varius enim <br> in eros elementum tristique.
-                        </div>
-                    </div>
-                    <div class="setting__item">
-                        <div class="setting__wrap-image"><img src="image/icon__svg/Combined-Shape-1.svg" alt="#" class="setting__image"></div>
-                        <div class="setting__name">Sustainable sourcing</div>
-                        <div class="setting__description">
-                            Lorem ipsum dolor sit amet, consectetur <br> 
-                            adipiscing elit. Suspendisse varius enim <br> in eros elementum tristique.
-                        </div>
-                    </div>
-                    <div class="setting__item">
-                        <div class="setting__wrap-image"><img src="image/icon__svg/Combined-Shape-1.svg" alt="#" class="setting__image"></div>
-                        <div class="setting__name">Sustainable sourcing</div>
-                        <div class="setting__description">
-                            Lorem ipsum dolor sit amet, consectetur <br> 
-                            adipiscing elit. Suspendisse varius enim <br> in eros elementum tristique.
-                        </div>
-                    </div>
-                    <div class="setting__item">
-                        <div class="setting__wrap-image"><img src="image/icon__svg/Combined-Shape-1.svg" alt="#" class="setting__image"></div>
-                        <div class="setting__name">Sustainable sourcing</div>
-                        <div class="setting__description">
-                            Lorem ipsum dolor sit amet, consectetur <br> 
-                            adipiscing elit. Suspendisse varius enim <br> in eros elementum tristique.
-                        </div>
-                    </div>
-                    <div class="setting__item">
-                        <div class="setting__wrap-image"><img src="image/icon__svg/Combined-Shape-1.svg" alt="#" class="setting__image"></div>
-                        <div class="setting__name">Sustainable sourcing</div>
-                        <div class="setting__description">
-                            Lorem ipsum dolor sit amet, consectetur <br> 
-                            adipiscing elit. Suspendisse varius enim <br> in eros elementum tristique.
-                        </div>
-                    </div>
-                </div>
+                <!-- /.benefits__items -->
             </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.main__setting -->
+            <!-- /.benefits__wrap -->
+        </div>
+        <!-- /.container -->
 
-        <section class="main__store">
-            <div class="container">
-                <div class="store__wrap">
-                    <div class="store__title">
-                        <div class="store__text-yellow text-yellow ">Meet the family</div>
-                        <div class="store__text-bold text-bold">What we have in store for you.</div>
-                        <div class="store__text-description text-description">
-                            Morbi neque ex, condimentum dapibus congue et, vulputate ut <br> 
-                            ligula. Vestibulum sit amet urna turpis. Mauris euismod elitet nisi <br> 
-                            ultrices, ut faucibus orci tincidunt.
-                        </div>
-                    </div>
+        <div class="scroll__btn">
+            <a class="scroll__link" href="#specification"><img src="image/arrow__page-down.svg" alt="#"></a>
+        </div>
+        <!-- /.scroll__btn -->
+    </section>
+    <!-- /.page-section -->
 
-                    <div class="store__cards">
-                        <div class="store__card store__bg-1">
-                            <div class="store__name">Accessories</div>
-                            <div class="store__description">Accessories you didn't know <br> you needed.</div>
-                            <a href="#" class="store__link">
-                                <div class="store__more-link">View Accessories</div>
-                                <img src="image/icon__svg/arrow-icon.svg" alt="#" class="store__more-image">
-                            </a>                      
-                        </div>
-                        <!-- /.store__card -->
-                        <div class="store__card store__bg-2">
-                            <div class="store__name">Apparel</div>
-                            <div class="store__description">Check out our line of non- <br> hiking clothes.</div>
-                            <a href="#" class="store__link">
-                                <div class="store__more-link">View Accessories</div>
-                                <img src="image/icon__svg/arrow-icon.svg" alt="#" class="store__more-image">
-                            </a>
-                        </div>
-                        <!-- /.store__card -->
-                        <div class="store__card store__bg-3">
-                            <div class="store__name">Climbing Gear</div>
-                            <div class="store__description">Climbing gear for every occasion.</div>
-                            <a href="#" class="store__link">
-                                <div class="store__more-link">View Accessories</div>
-                                <img src="image/icon__svg/arrow-icon.svg" alt="#" class="store__more-image">
-                            </a>
-                        </div>
-                        <!-- /.store__card -->
-                        <div class="store__card store__bg-4">
-                            <div class="store__name">Headwear</div>
-                            <div class="store__description">Our beanies are so comfy you <br> won't believe it.</div>
-                            <a href="#" class="store__link">
-                                <div class="store__more-link">View Accessories</div>
-                                <img src="image/icon__svg/arrow-icon.svg" alt="#" class="store__more-image">
-                            </a>
-                        </div>
-                        <!-- /.store__card -->
-                        <div class="store__card store__bg-5">
-                            <div class="store__name">Jackets</div>
-                            <div class="store__description">Desert or mountain? Doesn't matter.</div>
-                            <a href="#" class="store__link">
-                                <div class="store__more-link">View Accessories</div>
-                                <img src="image/icon__svg/arrow-icon.svg" alt="#" class="store__more-image">
-                            </a>
-                        </div>
-                        <!-- /.store__card -->
-                        <div class="store__card store__bg-6">
-                            <div class="store__name">Hiking Gear</div>
-                            <div class="store__description">Our jackets are perfect for every <br> season.</div>
-                            <a href="#" class="store__link">
-                                <div class="store__more-link">View Accessories</div>
-                                <img src="image/icon__svg/arrow-icon.svg" alt="#" class="store__more-image">
-                            </a>
-                        </div>
-                        <!-- /.store__card -->
+    <section id="specification" class="page-section specification">
+        <div class="container">
+
+            <h3 class="title">Характеристики</h3>
+            <!-- /.specification__title -->
+
+            <div class="specification__wrap">
+
+                <div class="specification__item">
+                    <div class="specification__box specification__box-1">
+                        <h4 class="specification__box-title">Dlog-M 10 бит</h4>
+                        <p class="specification__box-text">
+                            Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с
+                            более широким динамическим диапазоном, дающим больше
+                            возможностей для цветокоррекции.
+                        </p>
                     </div>
-                    <!-- /.store__cards -->
-                    <div class="store__more">
-                        <div class="store__more-text">Show all categories</div>
-                        <img src="image/icon__svg/arrow-icon.svg" alt="#" class="store__more-image">
+                    <!-- /.specification__box -->
+
+                    <div class="specification__box specification__box-2">
+                        <h4 class="specification__box-title">Камера Hasselblad</h4>
+                        <p class="specification__box-text">
+                            Камера Hasselblad L1D-20С
+                            известны эргономичным дизайном
+                            и превосходным качеством изображений.
+                        </p>
                     </div>
+                    <!-- /.specification__box -->
                 </div>
-                <!-- /.stor__wrap -->
+                <!-- /.specification__item -->
+
+                <!-- <div class="specification__item">
+                    <img src="image/content/dron.png" alt="#">
+                </div> -->
+                <picture class="specification__item-img">
+                    <source srcset="image/top__modile-img.png" media="(max-width:440px)">
+                    <source srcset="image/top__medium-img.png" media="(max-width:730px)">
+                    <img src="image/content/dron.png" alt="#">
+                </picture>
+                <!-- /.specification__item -->
+
+                <div class="specification__item">
+
+                    <div class="specification__box specification__box-3">
+                        <h4 class="specification__box-title">Матрица CMOS 1</h4>
+                        <p class="specification__box-text">
+                            Зона активной работы новой 1-дюймовой матрицы CMOS в четыре раза превышает показатели Mavic
+                            Pro
+                        </p>
+                    </div>
+                    <!-- /.specification__box -->
+
+                    <div class="specification__box specification__box-4">
+                        <h4 class="specification__box-title">Видео HDR</h4>
+                        <p class="specification__box-text">
+                            Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG
+                            4K ТВ и просматривать
+                            запись в полном цветовом спектре
+                        </p>
+                    </div>
+                    <!-- /.specification__box -->
+                </div>
+                <!-- /.specification__item -->
             </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.main__stor -->
-        
-        <section class="main__goods">
-            <div class="container">
-                <div class="goods__wrap">
-                    <div class="goods__nav">
-                        <div class="goods__item">
-                            <img src="image/01.svg" alt="#" class="goods__image">
-                            <div class="goods__text">First Aid Kit</div>
-                        </div>
-                        <div class="goods__item">
-                            <div class="goods__text">Banger Bottle</div>
-                        </div>
-                        <div class="goods__item">
-                            <img src="image/02.svg" alt="#" class="goods__image">
-                            <div class="goods__text">Brian Schultz</div>
-                        </div>
-                        <div class="goods__item">
-                            <img src="image/03.svg" alt="#" class="goods__image">
-                            <div class="goods__text">Leah Stoff</div>
-                        </div>
-                        <div class="goods__item">
-                            <img src="image/04.svg" alt="#" class="goods__image">
-                            <div class="goods__text">Catalina, California</div>
-                        </div>
-                    </div>
-                    <!-- /.goods__nav -->     
+            <!-- /.specification__wrap -->
+        </div>
+        <!-- /.container -->
+
+        <div class="scroll__btn">
+            <a class="scroll__link" href="#question"><img src="image/arrow__page-down.svg" alt="#"></a>
+        </div>
+        <!-- /.scroll__btn -->
+    </section>
+    <!-- /.page-section  specification -->
+
+    <section id="question" class="page-section question">
+        <div class="container">
+            <h3 class="title">Остались вопросы?</h3>
+            <!-- /.question__title -->
+
+            <div class="question__items">
+
+                <div class="question__item">
+                    <h4 class="question__item-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?</h4>
+
+                    <p class="question__item-text">
+                        В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время,
+                        скорость, уровень шума,
+                        обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция
+                        Hyperlapse (гиперлапс).
+                    </p>
+                    <!-- /.question__item-text -->
                 </div>
-                <!-- /.goods__wrap -->
+                <!-- /.question__item -->
 
-                <div class="goods__poster-wrap">
-                    <div class="goods__title">
-                        <div class="goods__name">shop</div>
-                        <div class="goods__text-yellow text-yellow">Check out our products.</div>
-                        <div class="goods__text-description text-description">
-                            Morbi neque ex, condimentum dapibus congue et, vulputate ut <br>
-                            ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi <br>
-                            ultrices, ut faucibus orci tincidunt.
-                        </div>
+                <div class="question__item">
+                    <h4 class="question__item-title">Чем Mavic 2 лучше Mavic Pro?</h4>
 
-                        <button class="goods__button button">Visit shop</button>
-                    </div>
+                    <p class="question__item-text">
+                        В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время,
+                        скорость, уровень шума,
+                        обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция
+                        Hyperlapse (гиперлапс).
+                    </p>
+                    <!-- /.question__item-text -->
                 </div>
-                <!-- /.goods__poster-wrap -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.main__goods -->
+                <!-- /.question__item -->
 
-        <section class="main__buyer">
-            <div class="container">
-                <div class="buyer__wrap">
-                    <div class="buyer__title">
-                        <div class="setting__text-yellow text-yellow ">Buyer's guides</div>
-                        <div class="setting__text-bold text-bold">Navigating our offering.</div>
-                        <div class="setting__text-description text-description">
-                            Morbi neque ex, condimentum dapibus congue et, vulputate ut <br> 
-                            ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi <br> 
-                            ultrices, ut faucibus orci tincidunt.
-                        </div>
-                    </div>
-                    <div class="buyer__blocks">
-                        <div class="buyer__info">
-                            <div class="buyer__image-block"><img src="image/IMAGE__buyer.png" alt="#" class="buyer__image"></div>
-                            <div class="buyer__people">
-                                <div class="buyer__text">3 climbing accessories for the climber that <br> has everything</div>
-                                <div class="buyer__description">
-                                    <div class="buyer__name">
-                                        <img src="image/IMAGE__buyer.svg" alt="#" class="buyer__image-people">
-                                        <span class="buyer__name-bold">Alex Jenna</span>
-                                        <span class="buyer__name-yellow">QA</span>
-                                    </div>
-                                    <div class="buyer__time">October 18, 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="buyer__info">
-                            <div class="buyer__image-block"><img src="image/IMAGE__buyer.png" alt="#" class="buyer__image"></div>
-                            <div class="buyer__people">
-                                <div class="buyer__text">3 climbing accessories for the climber that <br> has everything</div>
-                                <div class="buyer__description">
-                                    <div class="buyer__name">
-                                        <img src="image/IMAGE__buyer.svg" alt="#" class="buyer__image-people">
-                                        <span class="buyer__name-bold">Alex Jenna</span>
-                                        <span class="buyer__name-yellow">QA</span>
-                                    </div>
-                                    <div class="buyer__time">October 18, 2021</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.buyer__blocks -->
+                <div class="question__item">
+                    <h4 class="question__item-title">Можно ли подключить Mavic 2 к очкам DJI Goggles?</h4>
 
-                        <div class="buyer__more">
-                            <div class="buyer__more-text">Show all buyer's guides</div>
-                            <img src="image/icon__svg/arrow-icon.svg" alt="#" class="buyer__more-image">
-                        </div>
+                    <p class="question__item-text">
+                        В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время,
+                        скорость, уровень шума,
+                        обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция
+                        Hyperlapse (гиперлапс).
+                    </p>
+                    <!-- /.question__item-text -->
                 </div>
-                <!-- /.buyer__wrap -->
-            </div>
-            <!-- /.container -->
-        </section>
-        <!-- /.main__buyer -->
+                <!-- /.question__item -->
 
-        <section class="main__magazine">
-            <div class="contianer">
-                <div class="magazine__wrap">
-                    <div class="magazine__image"><img src="image/IMAGE-book.png" alt="#" class="magazine__image"></div>
-                    <div class="magazine__title">
-                        <div class="magazine__text-yellow text-yellow">Some light reading</div>
-                        <div class="magazine__text-bold text-bold">Subscribe to our <br> magazine today.</div>
-                        <div class="magazine__text-description text-description">
-                            We are an outdoor gear company focused on <br> 
-                            Lorem ipsum dolor sit amet, consectetur <br> 
-                            adipiscing elit. Nullam scelerisque aliquam odio <br> 
-                            et faucibus. Nulla rhoncus feugiat eros quis <br> 
-                            consectetur. Morbi neque ex, condimentum <br> 
-                            dapibus congue et.
-                        </div>
-                        <div class="magazine__more">
-                            <div class="magazine__more-text">Show all buyer's guides</div>
-                            <img src="image/icon__svg/arrow-icon.svg" alt="#" class="magazine__more-image">
-                        </div>
-                    </div>
+                <div class="question__item">
+                    <h4 class="question__item-title">Является ли Mavic 2 водонепроницаемым？</h4>
+
+                    <p class="question__item-text">
+                        В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время,
+                        скорость, уровень шума,
+                        обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция
+                        Hyperlapse (гиперлапс).
+                    </p>
+                    <!-- /.question__item-text -->
                 </div>
-                <!-- /.magazine__wrap -->
-            </div>
-            <!-- /.contianer -->
-        </section>
-        <!-- /.main__magazine -->
-    </div>
-    <!-- /.main -->
-
-    <footer class="footer">
-        <a href="#" class="footer__logo">
-            <img src="image/icon__svg/logo.svg" alt="#" class="footer__image">
-        </a>
-        <section class="footer__menu">
-            <div class="footer__nav">
-                <div class="footer__column">
-                    <div class="footer__items">
-                        <span class="footer__name-item text-yellow">Pages</span>
-                        <a href="#" class="footer__item">Home</a>
-                        <a href="#" class="footer__item">Shop</a>
-                        <a href="#" class="footer__item">Categories</a>
-                        <a href="#" class="footer__item">Buyer's guides</a>
-                        <a href="#" class="footer__item">404</a>
-                        <a href="#" class="footer__item">Password</a>
-                    </div>
-                    <!-- /.footer__items -->
-                    <div class="footer__items">
-                        <span class="footer__name-item text-yellow">Gear categories</span>
-                        <a href="#" class="footer__item">Hiking Gear</a>
-                        <a href="#" class="footer__item">Climbing Gear</a>
-                        <a href="#" class="footer__item">Jackets</a>
-                        <a href="#" class="footer__item">Accessories</a>
-                        <a href="#" class="footer__item">Apparel</a>
-                        <a href="#" class="footer__item">Headwear</a>
-                    </div>
-                    <!-- /.footer__items -->
-                    <div class="footer__items">
-                        <span class="footer__name-item text-yellow">Company</span>
-                        <a href="#" class="footer__item">About us</a>
-                        <a href="#" class="footer__item">Our team</a>
-                        <a href="#" class="footer__item">Contact</a>
-                        <a href="#" class="footer__item">Terms & Conditions</a>
-                        <a href="#" class="footer__item">Style guide</a>
-                        <a href="#" class="footer__item">Licenses</a>
-                    </div>
-                    <!-- /.footer__items -->
-                </div>
-                <!-- /.footer__column -->
-
-                <div class="footer__news">
-                    <div class="news__title">
-                        <div class="news__text-yellow text-yellow">Newsletter</div>
-                        <div class="news__text-description text-description">
-                            Subscribe to our (infrequent) newsletter where we share news <br> 
-                            about upcoming listings and projects.
-                        </div>                            
-                    </div>
-                    <!-- /.news__title -->
-                    
-                    <div class="header-input">
-                        <form action="#" class="form-input">
-                            <input type="search" placeholder="Email" class="input-search">
-                        </form>
-                    </div>
-
-                    <div class="news__sosial">
-                        <a href="#" class="news__link"><img src="image/icon__svg/in.svg" alt="#" class="news__image-link"></a>
-                        <a href="#" class="news__link"><img src="image/icon__svg/facebook.svg" alt="#" class="news__image-link"></a>
-                        <a href="#" class="news__link"><img src="image/icon__svg/inst.svg" alt="#" class="news__image-link"></a>
-                        <a href="#" class="news__link"><img src="image/icon__svg/twiter.svg" alt="#" class="news__image-link"></a>
-                    </div>
-                </div>
-                <!-- /.footer__news -->
+                <!-- /.question__item -->
 
             </div>
-            <!-- /.footer__nav -->
-        </section>
-        <!-- /.footer__menu -->
-    </footer>
+            <!-- /.question__items -->
+        </div>
+        <!-- /.container -->
+
+        <div class="scroll__btn">
+            <a class="scroll__link" href="#contacts"><img src="image/arrow__page-down.svg" alt="#"></a>
+        </div>
+        <!-- /.scroll__btn  question-->
+    </section>
+    <!-- /.page-section -->
+
+    <section id="contacts" class="page-section contacts">
+        <div class="container">
+            <h3 class="title">Контакты</h3>
+
+            <div class="contacts__wrap">
+                <div class="contacts__info">
+                    <div class="contacts__info-box">
+                        <p class="contacts__info-title">Киев</p>
+                        <a class="contacts__info-phone" href="tel:+80505676767">+8 (050) 567– 67 – 67</a>
+                        <a class="contacts__info-email"
+                            href="mailto:dgi.mavic2pro.kiev@mail.ru">dgi.mavic2pro.kiev@mail.ru</a>
+                    </div>
+                    <!-- /.contacts__info-box -->
+
+                    <div class="contacts__info-box">
+                        <p class="contacts__info-title">Москва</p>
+                        <a class="contacts__info-phone" href="tel:+74995676767">+7 (499) 567– 67 – 67</a>
+                        <a class="contacts__info-email"
+                            href="mailto:dgi.mavic2pro.moscow@mail.ru">dgi.mavic2pro.moscow@mail.ru</a>
+                    </div>
+                    <!-- /.contacts__info-box -->
+
+                    <div class="contacts__info-box">
+                        <p class="contacts__info-title">Минск</p>
+                        <a class="contacts__info-phone" href="tel:+375175676767">+3 (7517) 567– 67 – 67</a>
+                        <a class="contacts__info-email"
+                            href="mailto:dgi.mavic2pro.minsk@mail.ru">dgi.mavic2pro.minsk@mail.ru</a>
+                    </div>
+                    <!-- /.contacts__info-box -->
+                </div>
+                <!-- /.contacts__info -->
+
+                <div class="contacts__form">
+                    <form>
+                        <h4 class="contacts__form-title">Остались вопросы?</h4>
+
+                        <p class="contacts__form-text">
+                            Мы обязательно свяжемся с вами в течение двух рабочих дней
+                        </p>
+
+                        <div class="contacts__form-wrap">
+                            <input class="contacts__form-input" type="text" placeholder="Ваше имя">
+                            <input class="contacts__form-input" type="text" placeholder="Ваше e-mail">
+                        </div>
+                        <!-- /.contacts__form-wrap -->
+
+                        <textarea class="contacts__form-textarea" placeholder="Что вас интересует?"></textarea>
+
+                        <button class="contacts__form-btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+                <!-- /.contacts__form -->
+
+                <div class="contacts__social">
+                    <ul class="contacts__social-list">
+                        <li class="contacts__social-item">
+                            <a class="contacts__social-link" a href="#"><img src="image/facebook.svg" alt="#"></a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a class="contacts__social-link" a href="#"><img src="image/youtube.svg" alt="#"></a>
+                        </li>
+                        <li class="contacts__social-item">
+                            <a class="contacts__social-link" a href="#"><img src="image/instagram.svg" alt="#"></a>
+                        </li>
+                    </ul>
+                    <!-- /.contacts__social-list -->
+                </div>
+                <!-- /.contacts__social -->
+
+            </div>
+            <!-- /.contacts__wrap -->
+            <!-- /.title -->
+        </div>
+        <!-- /.container -->
+        <div class="scroll__btn">
+            <a class="scroll__link" href="#top"><img src="image/arrow__page-up.svg" alt="#"></a>
+        </div>
+    </section>
+    <!-- /.page-section contacts -->
+
+    <footeer class="footer">
+        <div class="container">
+            <p class="footer__copy">
+                © DJI, 2020
+            </p>
+        </div>
+        <!-- /.continaer -->
+    </footeer>
     <!-- /.footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
 </body>
+
 </html>

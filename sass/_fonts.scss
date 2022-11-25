@@ -1,46 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 
+@mixin regular {
+   font-family: 'Open Sans', sans-serif;
+   width: 400;
 
-@font-face {
-    font-family: 'SFProDisplay-Regular',sans-serif;
-    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-        ('../fonts/SFProDisplay-Regular.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'SFProDisplay-Semibold',sans-serif;
-    src: url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
-        ('../fonts/SFProDisplay-Semibold.woff') format('woff');
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-}
-
-
-@mixin light {
-        font-family: 'Ubuntu',sans-serif;
-        font-weight: 300;
-}
-
-@mixin medium  {
-    font-family: 'Ubuntu',sans-serif;
-    font-weight: 500;
 }
 
 @mixin bold {
-    font-family: 'Ubuntu',sans-serif;
-    font-weight: 700;
-    
+   font-family: 'Open Sans', sans-serif;
+   width: 700;
+   
 }
 
-@mixin sf-semibold {
-    font-family: 'SFProDisplay-Semibold',sans-serif;
-    font-weight: 600;
+@mixin extrabold {
+   font-family: 'Open Sans', sans-serif;
+   width: 800;
+   
 }
 
-@mixin sf-regular {
-    font-family: 'SFProDisplay-Regular',sans-serif;
-    font-weight: 400;
-}

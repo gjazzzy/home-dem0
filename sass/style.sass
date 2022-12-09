@@ -8,6 +8,7 @@
 @import 'global'
 
 .header
+    font-family: 'open sans'
     z-index: 2
     padding: 50px 0 20px 0
     background: #ffffff
@@ -87,24 +88,27 @@
 
     &__img
         max-width: 873px
+        position: absolute
+        right: 0
+        z-index: -1
 
-    &__line
-        background-image: url('../image/content/logo__bg.png')
-        background-repeat: no-repeat
-        background-position: centere
-        background-size: cover
-        text-align: center
-        flex-wrap: wrap
-        justify-content: space-around
-        display: flex
-        padding: 110px 0
+.top__line
+    background-image: url('../image/content/logo__bg.png')
+    background-repeat: no-repeat
+    background-position: centere
+    background-size: cover
+    text-align: center
+    flex-wrap: wrap
+    justify-content: space-between
+    display: flex
+    padding: 110px 0
 
     &__line-img
-        display: flex
-        flex: wrap
-        padding: 20px
-        position: relative
         max-width: 200px
+
+.top__line .container
+    gap: 100px
+    display: flex
 
 //features
 .features
@@ -124,7 +128,7 @@
         color: #192b59
         text-align: left
         font-size: 40px
-        max-width: 280px
+        max-width: 300px
 
     &__items
         max-width: 1150px
@@ -139,7 +143,7 @@
 
     &__item
         margin: 6px
-        background: #d9d9de
+        background: #F4FAFF
         padding: 90px 40px 70px
         min-height: 256px
         display: flex
